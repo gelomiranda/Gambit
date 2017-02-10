@@ -1,0 +1,144 @@
+<div class="scrollable">
+  <br/>
+  <div class="">
+    <div ui-state="activeTab" default="1">
+      <ul class="nav nav-tabs">
+        <li ui-class="{'active': activeTab == 1}">
+          <a ui-set="{'activeTab': 1}">Manual Betting</a>
+        </li>
+        <li ui-class="{'active': activeTab == 2}">
+          <a ui-set="{'activeTab': 2}">Automated Betting</a>
+        </li>
+      </ul>
+
+      <div ui-if="activeTab == 1">
+          <div class="row">
+            <div class="col-lg-12">
+              <span class="label label-primary">Profit On Win</span>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-12">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">1/2</button>
+                  <button class="btn btn-default" type="button">2x</button>
+                  <button class="btn btn-default" type="button">MAX</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+          <br/>
+          <div class="row">
+            <div class="col-lg-6">
+              <span class="label label-primary">Profit On Win</span>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+           <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="00000" aria-describedby="basic-addon1">
+              </div>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+
+          </br>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span class="label label-primary">ROLL OVER</span>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="3xxx" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2"><<</span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span class="label label-primary">PAYOUT</span>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="1xx" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">>></span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span class="label label-primary">WIN CHANCE</span>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="4xx" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">>></span>
+              </div>
+            </div>
+          </div>
+          </br>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <button type="button" class="btn btn-primary btn-lg btn-block">ROLL DICE</button>
+            </div>
+          </div>
+        </div>
+
+      <div ui-if="activeTab == 2">
+          <div class="row">
+            <div class="col-lg-12">
+              <span class="label label-primary">Profit On Win</span>
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-12">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">1/2</button>
+                  <button class="btn btn-default" type="button">2x</button>
+                  <button class="btn btn-default" type="button">MAX</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+          <br/>
+          <div class="row">
+            <div class="col-lg-6">
+              <span class="label label-primary">Profit On Win</span>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+           <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="00000" aria-describedby="basic-addon1">
+              </div>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+
+          </br>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span class="label label-primary">ROLL OVER</span>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="5xx" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2"><<</span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span class="label label-primary">PAYOUT</span>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="3xx" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">>></span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+              <span class="label label-primary">WIN CHANCE</span>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="1xx" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">>></span>
+              </div>
+            </div>
+          </div>
+          </br>
+          
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <button type="button" class="btn btn-primary btn-lg btn-block">ROLL DICE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
